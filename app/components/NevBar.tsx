@@ -14,7 +14,7 @@ const NevBar = () => {
         <SiSitecore className="" />
         RashikUI
       </Link>
-      <ul className="menu menu-horizontal text-base font-bold gap-10 ml-12">
+      <ul className="menu menu-horizontal text-base font-bold gap-10 ml-10">
         <li>
           <Link href={""}>
             {" "}
