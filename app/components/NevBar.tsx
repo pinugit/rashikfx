@@ -9,10 +9,10 @@ import { SiSitecore } from "react-icons/si";
 
 const NevBar = () => {
   return (
-    <div className="navbar bg-base-100">
-      <Link className=" btn btn-ghost text-xl ml-4 text-primary" href="/home">
+    <div className="navbar bg-base-100 fixed z-50">
+      <Link className=" btn btn-ghost text-xl ml-4 text-primary" href="/">
         <SiSitecore className="" />
-        RashikUI
+        RashikFX
       </Link>
       <ul className="menu menu-horizontal text-base font-bold gap-10 ml-10">
         <li>
