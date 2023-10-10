@@ -29,6 +29,7 @@ const config: Config = {
 
           "base-100": "#17191a",
           "base-200": "#1b1c1d",
+          "base-300": "#9b9387",
 
           info: "#8be8fd",
 

@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} flex bg-base-200`}>
-        <div className="w-[80%] h-screen">
+        <div className="w-[80%] ">
           <NevBar />
           {children}
         </div>

@@ -29,7 +29,7 @@ const AccountType = () => {
   }, [selectedAccount]);
 
   return (
-    <div className="card-custom flex flex-col gap-3 ">
+    <div className="card-custom flex flex-col gap-6 ">
       <h1>
         Primary Account <AiOutlineQuestionCircle className="text-xl pt-1" />
       </h1>
@@ -40,24 +40,67 @@ const AccountType = () => {
         />
       </div>
 
-      <div className="flex gap-6">
-        <div id="overview" className="">
+      <div className="flex gap-14 w-[100%]">
+        <div id="overview" className="flex-1">
           <h2>OVERVIEW</h2>
 
           <ul>
-            <li>
-              <p>Server</p> <p>{selectedAccountObject?.server}</p>
+            <li className="li-custom">
+              <div>Server</div>{" "}
+              <div className="text-white">{selectedAccountObject?.server}</div>
             </li>
-            <li>
-              <p>Leverage</p> <p>{selectedAccountObject?.leverage}</p>
+            <li className="li-custom">
+              <div>Leverage</div>{" "}
+              <div className="text-white">
+                {selectedAccountObject?.leverage}
+              </div>
             </li>
-            <li>
-              <p>No Swap</p> <p>{selectedAccountObject?.noSwap}</p>
+            <li className="li-custom">
+              <div>No Swap</div>{" "}
+              <div className="text-secondary">
+                {selectedAccountObject?.noSwap}
+              </div>
             </li>
-            <li>
-              <p>Fixed Rate</p> <p>{selectedAccountObject?.fixedRate}</p>
+            <li className="li-custom">
+              <div>Fixed Rate</div>{" "}
+              <div className="text-white">
+                {selectedAccountObject?.fixedRate}
+              </div>
             </li>
           </ul>
+        </div>
+        <div className="w-2/4 flex flex-col gap-4">
+          <h2>Current Funds</h2>
+          <div className="flex justify-between">
+            <div>
+              <div className="text-base-300 mb-3">Free Margin</div>
+              <div className="text-lg font-bold">
+                ${selectedAccountObject?.freeMargin}
+              </div>
+            </div>
+            <div>
+              <div className="text-base-300 mb-3">Equity</div>
+              <div className="text-lg font-bold">
+                ${selectedAccountObject?.equity}
+              </div>
+            </div>
+            <div>
+              <div className="text-base-300 mb-3">Balance</div>
+              <div className="text-lg font-bold">
+                ${selectedAccountObject?.accBalance}
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-between gap-3 px-3 mt-3">
+            <div className="btn btn-primary rounded-4xl flex-1">
+              NEW DEPOSIT
+            </div>
+            <div className="btn btn-default rounded-4xl flex-1">Trade</div>
+          </div>
+
+          <a className="link-secondary fot-sm" href="">
+            FORGOT TRADING ACCOUNT PASSWORD?
+          </a>
         </div>
       </div>
     </div>

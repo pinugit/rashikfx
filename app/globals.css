@@ -4,7 +4,11 @@
 
 @layer components {
   .card-custom {
-    @apply card bg-base-100 w-[80%] p-8;
+    @apply card bg-base-100 w-[65%] p-8 shadow-sm;
+  }
+
+  .li-custom {
+    @apply flex justify-between border-b-[1px] border-secondary text-sm p-4 text-base-300;
   }
 
   h1 {
