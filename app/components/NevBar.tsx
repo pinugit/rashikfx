@@ -71,7 +71,7 @@ const NevBar = () => {
         <li>
           <Link href={""}>
             <HiOutlineCash />
-            WITHDRAWS
+            WITHDRAWLS
           </Link>
         </li>
       </ul>
