@@ -11,19 +11,26 @@ const Sidebar = () => {
         <ul className="menu bg-base-100">
           {sideBarData.map((item, index) =>
             item.isDropDown ? (
-              <li key={index}>
+              <li key={index} className="p-3 text-lg">
                 <details>
-                  <summary>{item.title}</summary>
+                  <summary>
+                    {item.logo}
+                    {item.title}
+                  </summary>
                   {item.subMenu?.map((subItem, index) => (
-                    <li key={index}>
+                    <li key={index} className="pl-5">
                       <a>{subItem}</a>
                     </li>
                   ))}
                 </details>
               </li>
             ) : (
-              <li key={index}>
-                <a> {item.title}</a>
+              <li key={index} className="p-3 text-lg">
+                <a>
+                  {" "}
+                  {item.logo}
+                  {item.title}
+                </a>
               </li>
             )
           )}
