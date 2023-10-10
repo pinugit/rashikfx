@@ -8,6 +8,7 @@ export const accountData = [
     fixedRate: "off",
     freeMargin: 0,
     equity: 0,
+    isReal: true,
   },
   {
     accNo: 44444444,
@@ -18,6 +19,7 @@ export const accountData = [
     fixedRate: "off",
     freeMargin: 2,
     equity: 90,
+    isReal: false,
   },
   {
     accNo: 20000,
@@ -28,6 +30,7 @@ export const accountData = [
     fixedRate: "off",
     freeMargin: 10,
     equity: 20,
+    isReal: true,
   },
   {
     accNo: 2232334,
@@ -38,5 +41,29 @@ export const accountData = [
     fixedRate: "off",
     freeMargin: 10,
     equity: 30,
+    isReal: false,
+  },
+  // Add more dummy data with isReal property
+  {
+    accNo: 55555555,
+    accBalance: 1000,
+    server: "Demo-FX",
+    leverage: "1:100",
+    noSwap: "NO",
+    fixedRate: "on",
+    freeMargin: 50,
+    equity: 200,
+    isReal: false,
+  },
+  {
+    accNo: 77777777,
+    accBalance: 1500,
+    server: "Live-FX",
+    leverage: "1:1000",
+    noSwap: "YES",
+    fixedRate: "off",
+    freeMargin: 100,
+    equity: 800,
+    isReal: true,
   },
 ];

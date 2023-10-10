@@ -1,8 +1,9 @@
+import AccountTable from "./components/AccountTable";
 import AccountType from "./components/AccountType";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10 items-center mt-28">
+    <div className="flex flex-col gap-10 items-center mt-28 mb-20">
       <div className="card-custom">
         <h1>For You</h1>
         <div className="carousel"></div>
@@ -21,7 +22,7 @@ export default function Home() {
           Learn More About Deposit Bonuses
         </a>
       </div>
-      <div className="card-custom">is </div>
+      <AccountTable />
     </div>
   );
 }
