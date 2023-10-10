@@ -98,7 +98,7 @@ const AccountType = () => {
             <div className="btn btn-default rounded-4xl flex-1">Trade</div>
           </div>
 
-          <a className="link-secondary fot-sm" href="">
+          <a className="link-secondary text-xs  " href="">
             FORGOT TRADING ACCOUNT PASSWORD?
           </a>
         </div>
