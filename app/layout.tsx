@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NevBar from "./components/NevBar";
+import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +23,9 @@ export default function RootLayout({
         <div className="w-[80%] ">
           <NevBar />
           {children}
+          <Footer />
         </div>
-        <div className="w-[20%] h-screen sm:hidden">world</div>
+        <Sidebar />
       </body>
     </html>
   );
