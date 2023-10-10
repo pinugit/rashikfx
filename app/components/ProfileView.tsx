@@ -4,7 +4,7 @@ import { IoIosNotifications } from "react-icons/io";
 
 const ProfileView = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between mt-3">
       <div className="avatar">
         <div className="w-12 rounded-full">
           <img src="https://th.bing.com/th/id/R.5a0ca145cd59e75337e41bf74cdce1b9?rik=vYT8u59JKboRow&riu=http%3a%2f%2fwww.buckinghamandcompany.com.au%2fwp-content%2fuploads%2f2016%2f03%2fprofile-placeholder.png&ehk=utyTQPtGFj87RTm1YalDJ78egfurl4att7Q3FrKAY2k%3d&risl=&pid=ImgRaw&r=0 " />
