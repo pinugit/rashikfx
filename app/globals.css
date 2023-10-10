@@ -10,4 +10,12 @@
   h1 {
     @apply text-lg font-bold flex gap-2;
   }
+
+  h2 {
+    @apply text-sm font-bold flex gap-1;
+  }
+
+  p {
+    @apply text-xs;
+  }
 }

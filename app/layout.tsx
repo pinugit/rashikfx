@@ -22,7 +22,7 @@ export default function RootLayout({
           <NevBar />
           {children}
         </div>
-        <div className="w-[20%] h-screen">world</div>
+        <div className="w-[20%] h-screen sm:hidden">world</div>
       </body>
     </html>
   );

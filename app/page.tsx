@@ -1,5 +1,4 @@
-import { AiOutlineQuestionCircle } from "react-icons/ai";
-import Dropdown from "./components/Dropdown";
+import AccountType from "./components/AccountType";
 
 export default function Home() {
   return (
@@ -8,19 +7,7 @@ export default function Home() {
         <h1>For You</h1>
         <div className="carousel"></div>
       </div>
-      <div className="card-custom flex flex-col gap-3 ">
-        <h1>
-          Primary Account <AiOutlineQuestionCircle className="text-xl pt-1" />
-        </h1>
-        <div className="w-[100%]">
-          <Dropdown
-            dropDownItems={[
-              { accNo: 13434322, accBalance: 200 },
-              { accNo: 13434333, accBalance: 3 },
-            ]}
-          />
-        </div>
-      </div>
+      <AccountType />
       <div className="card-custom">this</div>
       <div className="card-custom">is </div>
     </div>
