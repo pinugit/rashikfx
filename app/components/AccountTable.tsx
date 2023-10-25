@@ -24,7 +24,7 @@ const AccountTable = () => {
         </thead>
         <tbody>
           {accountData.map((item, index) => (
-            <tr>
+            <tr key={index}>
               <td className="flex gap-3">
                 <div className="text-orange-500 text-sm">MT5</div> {item.accNo}
               </td>

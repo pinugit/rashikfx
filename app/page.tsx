@@ -13,8 +13,8 @@ export default function Home() {
         <h1>50% BONUSES</h1>
         <div className="flex justify-between gap-6 mt-3">
           <p className="text-base">
-            Here you'll find information about all your active and available
-            bonuses. You can claim a bonus on each deposit.
+            Here you&apos;ll find information about all your active and
+            available bonuses. You can claim a bonus on each deposit.
           </p>
           <div className="btn btn-neutral">Get Bonus</div>
         </div>
